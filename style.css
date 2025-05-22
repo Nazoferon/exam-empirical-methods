@@ -1,0 +1,129 @@
+/* Основний стиль для всіх пристроїв */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #005555;
+    border-bottom: 2px solid #005555;
+    padding-bottom: 5px;
+    font-size: 1.4em;
+}
+
+.ticket {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.answer {
+    margin-left: 15px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+/* Оптимізація для смартфонів */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        padding-bottom: 3px;
+    }
+
+    .ticket {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .question {
+        margin-bottom: 10px;
+    }
+
+    .answer {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+
+    /* Покращення читабельності математичних формул */
+    .MathJax {
+        font-size: 1em !important;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+/* Додаткові стилі для дуже малих екранів */
+@media only screen and (max-width: 400px) {
+    body {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+}
+
+/* Поліпшення прокрутки для таблиць на малих екранах */
+@media only screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Оптимізація для друку */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    .ticket {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    h1, h2 {
+        color: black;
+    }
+}
